@@ -1,0 +1,56 @@
+ Structure of code = Pep8
+ classes used and protected and public also.
+
+ RFC 821 has been followed
+
+ In order to run please run the folder inside the Zip as the project and once opened ruin the SMTP server first then the SMTP CLIENT and type
+ in the client command prompt window to use commands and communicate withj the server.
+
+ List of commands:
+ HELO
+ MAIL (FROM:)
+ RCPT (TO:)
+ DATA
+ HELP
+ RSET
+ NOOP
+ QUIT
+
+ Server storage = flat files (Text files)
+
+ Userlist and passwords if enabled are:
+
+ brett thisisapassword
+ test1 notthepassword
+ test2 testerboy2
+ test3 tester3
+ test4 testor6
+ test5 meanie4
+
+ userlist not enabled due to errors creating login mnethods but here if they can
+ be fixed by the deadline date.
+
+---------------
+
+ TESTING ADVICE
+
+---------------
+
+ HELO + domain (Sends hello to server and receive a confirmation message back)
+
+ MAIL FROM: (enter the senders email)
+
+ RCPT TO:   (Enter the recipients email - can be repeated as many times as wanted)
+
+ DATA (has to be entered after MAIL and RCPT enter many lines and '.' on an empty line to complete sending the message)
+
+ HELP (To obtain the help command message)
+
+ RSET (Resets the server to the connection established state + also resets email buffers and message buffers to initial state) 
+
+ NOOP (Sends a message to the server and obtains a 250 OK back confirming the server is still running)
+
+ QUIT (Sends a message to the server to quit and read)
+
+ HELP, RSET, NOOP and QUIT can be used from any point but MAIL, RCPT and DATA have to be entered in order, error codes enabled for
+ incorrect entry so please try these and break the ordering.
